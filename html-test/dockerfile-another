@@ -1,0 +1,4 @@
+FROM debian
+RUN apt-get update -y && apt-get install fortune -y
+ADD html-generator.sh /bin/html-generator.sh
+ENTRYPOINT /bin/html-generator.sh
