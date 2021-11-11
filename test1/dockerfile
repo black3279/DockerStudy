@@ -1,0 +1,6 @@
+FROM busybox
+MAINTAINER bruce <test@gmail.com>
+COPY script* /bin/
+ENV VAR1 foo
+ENTRYPOINT ["/bin/script3"]
+CMD ["bar", "baz"]

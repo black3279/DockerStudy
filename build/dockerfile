@@ -1,0 +1,4 @@
+FROM scratch
+MAINTAINER bruce <test@gmail.com>
+COPY file* /
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "from environment: $VAR1"
+echo "first arg: $1"
+echo "second arg: $2"

@@ -1,0 +1,8 @@
+FROM debian
+RUN apt-get update -y && apt-get install fortune -y
+## && apt-get install nginx -y
+COPY html-generator.sh /bin/
+CMD ["/bin/html-generator.sh"]
+## CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 80
+
